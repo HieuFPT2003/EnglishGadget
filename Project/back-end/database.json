@@ -1,0 +1,217 @@
+{
+  "Users": [
+    {
+      "userID": 1,
+      "email": "user1@example.com",
+      "phone": "123456789",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "address": "Address 1",
+      "age": 25,
+      "name": "Nguyen Van A",
+      "password": "hashed_password1",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ91"
+    },
+    {
+      "id":"2003",
+      "userID": 2,
+      "email": "test@test.com",
+      "phone": "987654321",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "address": "Nguyen Van B",
+      "age": 30,
+      "name": "Test Name",
+      "password": "123",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ92"
+    },
+    {
+      "id":"1234",
+      "userID": 10,
+      "email": "premium@premium.com",
+      "phone": "987654321",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "address": "Nguyen Van B",
+      "age": 30,
+      "name": "Premium Name",
+      "password": "123",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ"
+    },
+    {
+      "userID": 3,
+      "email": "user3@example.com",
+      "phone": "111222333",
+      "address": "Nguyen Van C",
+      "age": 35,
+      "name": "Account 3",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "password": "hashed_password3",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ93"
+    },
+    {
+      "userID": 4,
+      "email": "user4@example.com",
+      "phone": "444555666",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "address": "Nguyen Quang A",
+      "age": 40,
+      "accountName": "Account 4",
+      "password": "hashed_password4",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ94"
+    },
+    {
+      "userID": 5,
+      "email": "user5@example.com",
+      "phone": "777888999",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "address": "Nguyen Quang B",
+      "age": 45,
+      "accountName": "Account 5",
+      "password": "hashed_password5",
+      "role": 0,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ95"
+    },
+    {
+      "userID": 6,
+      "id": "3114",
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "email": "hieu2003@gmail.com",
+      "password": "Hieu",
+      "phone": "200320",
+      "address": "HungYen",
+      "name": "Quang Hieu",
+      "age": "7",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ96",
+      "premium":true,
+      "role": "admin"
+    },
+    {
+      "id": "b24a",
+      "userID": 7,
+      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "email": "Hieu20112003@gmail.com",
+      "password": "Hieu&NQ03@",
+      "phone": "0394721618",
+      "address": "Hung Yen",
+      "name": "Nguyen Quang Hieu",
+      "age": "20",
+      "role": 1,
+      "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ97"
+    }
+  ],
+  "UserPost": [
+    {
+      "id": 1,
+      "userID": 1,
+      "title": "Portugal Euro 2024 squad: Who Roberto Martinez will take to Germany",
+      "imagePost": "https://media.bongda.com.vn/files/duc.nguyen/2024/01/01/screenshot-2023-12-31-224310-0816.png",
+      "postText": "The Selecao have a decent chance of tasting continental glory this summer if they play to their full potential.Although England and France must be seen as favourites, it wouldn't be a reach to place Portugal in the next crop of teams most likely to lift the Euro 2024 trophy in Germany this summer.After an underwhelming showing three years ago, where they were dumped out of the competition in the last 16 at the hands of Belgium, as well as a shock World Cup quarter-final exit to Morocco in Qatar, the Selecao will be motivated to put in a better showing this time around.Fernando Santos left his post following that defeat to the north African side, with Roberto Martinez stepping into the hotseat in his stead. The former Belgium boss was not a universally-popular choice, but he's done an impressive job thus far, as his side won each of his opening 10 games in charge.Martinez is blessed with a group bulging with talent, and they should be extra motivated to perform for Cristiano Ronaldo, in what is likely to be his last-ever international tournament. But who made Portugal's 26-player Euro squad? GOAL takes a look...Portugal's defensive options are strong, too. Ruben Dias and Joao Cancelo are nailed-on starters at the back, while Manchester United star Diogo Dalot has proved a popular choice down the left-hand side of defence.The question of who will partner Dias at centre-back is more open. Martinez has flipped between a back four and back three since taking over, with youngsters Goncalo Inacio and Antonio Silva both receiving minutes. though the ageless Pepe remains an option, too.",
+      "datePosted": "2023-11-01T10:00:00Z",
+      "likeCount": 700,
+      "categoryID": 2
+    },
+    {
+      "id": 2,
+      "userID": 2,
+      "title": "Blockchain, originally developed as the underlying technology for Bitcoin",
+      "imagePost": "https://media.licdn.com/dms/image/D4E12AQFvbkkfGRnhEg/article-cover_image-shrink_720_1280/0/1710402849694?e=2147483647&v=beta&t=mmhXhwJnZS1SW0m0U_NW1o1yY6SU7l0pJCj-u459yoc",
+      "postText": "Today, we explore the evolution of blockchain technology and its transformative impact on various industries. Blockchain, originally developed as the underlying technology for Bitcoin, has grown into a versatile tool with applications ranging from supply chain management to voting systems. Its decentralized nature, coupled with strong cryptographic security, ensures transparency and trust in transactions. As blockchain continues to mature, new consensus mechanisms and scalability solutions are being developed to address its limitations. The future of blockchain holds promise in disrupting traditional business models and creating new avenues for innovation.",
+      "datePosted": "2023-11-02T10:00:00Z",
+      "likeCount": 4,
+      "categoryID": 3
+    },
+    {
+      "id": 3,
+      "userID": 3,
+      "title": "Companies and policymakers are grappling with the need for robust regulations",
+      "imagePost": "https://media.licdn.com/dms/image/D5612AQFgdlIYJZd2Bg/article-cover_image-shrink_720_1280/0/1715577815351?e=2147483647&v=beta&t=3H6lOya2q5l16AExbcp-Slr5HycRnTKHdp3yz4zpHus",
+      "postText": "Today, we delve into the ethical implications of artificial intelligence (AI) and its role in shaping our future society. AI, with its ability to analyze vast amounts of data and make autonomous decisions, raises concerns about privacy, bias, and job displacement. As AI algorithms become more sophisticated, ensuring their ethical use becomes paramount. Companies and policymakers are grappling with the need for robust regulations and guidelines to mitigate risks and protect human rights. Despite these challenges, AI offers immense potential to enhance healthcare, transportation, and other critical sectors.",
+      "datePosted": "2023-11-03T10:00:00Z",
+      "likeCount": 100,
+      "categoryID": 4
+    },
+    {
+      "id": 4,
+      "userID": 4,
+      "title": "From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe",
+      "imagePost": "https://media.licdn.com/dms/image/D4E12AQE0wWaC8DZ_ZA/article-cover_image-shrink_720_1280/0/1712827735922?e=2147483647&v=beta&t=ExAqWEZ4q5WmxHnzLE870Do5dP-u2vLKUQV7b6dbKPY",
+      "postText": "Today, we explore the growing importance of cybersecurity in an increasingly digital world. With the proliferation of connected devices and online services, cybersecurity threats are becoming more sophisticated and widespread. Organizations must adopt robust cybersecurity measures to protect their data and infrastructure from malicious actors. From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe, affecting businesses, governments, and individuals alike. As we navigate this digital age, cybersecurity awareness and preparedness are critical to safeguarding our digital identities and ensuring a secure online environment.",
+      "datePosted": "2023-11-04T10:00:00Z",
+      "likeCount": 500,
+      "categoryID": 5
+    },
+    {
+      "userID": 2,
+      "likeCount": 4,
+      "title": "Euro",
+      "imagePost": "https://image.nhandan.vn/w800/Uploaded/2024/yqjwcqjlq/2024_06_14/anh-1-euro-3974.jpg.webp",
+      "content": "",
+      "category": 2,
+      "datePosted": "15/06/2024 15:46:07",
+      "id": 5
+    },
+    {
+      "id": 10,
+      "userID": 5,
+      "title": "Today, we discuss the future of sustainable energy and the global shift towards renewable sources",
+      "imagePost": "https://static.scientificamerican.com/sciam/cache/file/472706E8-7578-4030-B3A528D97F9E736E_source.jpg?w=1200",
+      "postText": "Today, we discuss the future of sustainable energy and the global shift towards renewable sources. As climate change continues to impact our planet, the transition to clean energy sources has become imperative. Solar, wind, and hydroelectric power offer environmentally friendly alternatives to fossil fuels, reducing carbon emissions and mitigating the effects of climate change. Governments and businesses worldwide are investing in renewable energy infrastructure and technologies to achieve carbon neutrality and create a sustainable future for generations to come.",
+      "datePosted": "2023-11-05T10:00:00Z",
+      "likeCount": 2,
+      "categoryID": 1
+    },
+    {
+      "userID": 1,
+      "likeCount": 1,
+      "title": "AR allows artists to create immersive experiences that blend physical and digital elements",
+      "imagePost": "https://capsulesight.com/318-SoraStorytellingAR-feature.webp",
+      "postText": "Today, we explore the intersection of art and technology, examining how digital platforms and augmented reality (AR) are reshaping the art world. AR allows artists to create immersive experiences that blend physical and digital elements, providing new ways for audiences to interact with art. From virtual exhibitions to AR-powered installations, technology is democratizing access to art and challenging traditional notions of creativity. As digital art continues to evolve, artists are embracing new tools and platforms to push the boundaries of artistic expression and engage global audiences.",
+      "category": null,
+      "datePosted": "15/06/2024 15:54:55",
+      "id": 6
+    }
+  ],
+  "Category": [
+    {
+      "categoryID": 1,
+      "categoryName": "Technology"
+    },
+    {
+      "categoryID": 2,
+      "categoryName": "Science"
+    },
+    {
+      "categoryID": 3,
+      "categoryName": "Art"
+    },
+    {
+      "categoryID": 4,
+      "categoryName": "History"
+    },
+    {
+      "categoryID": 5,
+      "categoryName": "Sports"
+    }
+  ],
+  "Instagram": [
+    {
+      "igID": 1,
+      "image": "https://s.yimg.com/ny/api/res/1.2/I8YrTnMIsenCGmTXpek3rw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/evening_standard_239/7af43eb4a0bce6a6c2e19adb8b1e6c04"
+    },
+    {
+      "igID": 2,
+      "image": "https://s.yimg.com/ny/api/res/1.2/I8YrTnMIsenCGmTXpek3rw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/evening_standard_239/7af43eb4a0bce6a6c2e19adb8b1e6c04"
+    },
+    {
+      "igID": 3,
+      "image": "https://s.yimg.com/ny/api/res/1.2/I8YrTnMIsenCGmTXpek3rw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/evening_standard_239/7af43eb4a0bce6a6c2e19adb8b1e6c04"
+    },
+    {
+      "igID": 4,
+      "image": "https://s.yimg.com/ny/api/res/1.2/I8YrTnMIsenCGmTXpek3rw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/evening_standard_239/7af43eb4a0bce6a6c2e19adb8b1e6c04"
+    }
+  ]
+}

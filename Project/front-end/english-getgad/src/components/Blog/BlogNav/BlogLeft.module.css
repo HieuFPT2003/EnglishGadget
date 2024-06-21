@@ -1,0 +1,37 @@
+.leftNav {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.formSearch {
+    position: relative;
+}
+.searchInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary-600);
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+.btnSearch {
+    position: absolute;
+    left: 90%;
+    top: 15%;
+}
+.navHeader {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.titleSub {
+    background-color: var(--color-primary-900);
+    padding: 1.5rem;
+}
+.navHeaderBack {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--color-primary-900);
+    margin-bottom: 1rem;
+}

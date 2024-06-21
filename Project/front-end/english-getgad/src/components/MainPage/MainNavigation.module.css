@@ -1,0 +1,20 @@
+.header {
+    margin: 8px 0px;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--color-primary-400);
+}
+
+.list a:hover,
+.list a.active {
+    color: var(--color-primary-800);
+}

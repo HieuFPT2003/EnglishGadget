@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7.5rem;
+    background-color: var(--color-primary-900);
+}
+.titlePage {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.listBtn {
+    color: var(--color-gray-500);
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 700;
+}

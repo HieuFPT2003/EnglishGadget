@@ -1,0 +1,15 @@
+.postItem {
+    display: flex;
+    max-width: 65rem;
+    margin-bottom: 8rem;
+    background-color: var(--color-gray-600);
+}
+.img {
+    width: 30%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.content {
+    width: 70%;
+    padding: 0.5rem;
+}
