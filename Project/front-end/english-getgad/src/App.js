@@ -1,13 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import { CheckingContextProvider } from "./store/CheckingContext";
-
 import HomePage from "./pages/Home";
 import ErrorPage from "./pages/Error";
 import AdminPage from "./pages/Admin";
 import Authentication, { action as authAction } from "./pages/Authentication";
 import { action as logoutAction } from "./components/Authenticator/Logout";
-import { checkAuthLoader, tokenLoader } from "./util/auth";
+import { checkAuthLoader, tokenLoader, checkPremiumAccount,redirectNotPremium } from "./util/auth";
 import BlogPage from "./pages/Blog";
 import BlogRoot from "./pages/BlogRoot";
 import BlogDetails, {
@@ -20,8 +19,9 @@ import CreatePost, {
   action as newPostAction,
 } from "./components/Blog/Profile/CreatePost/CreatePost";
 import CheckingRoot from "./pages/CheckingRoot";
+import PersonalPage from "./components/Personal/PersonalPage";
 import CheckingSpelling from "./components/Checking/SpellingCheck/CheckSpelling";
-
+import CheckingGrammar from "./components/Checking/GrammarCheck/CheckingGrammar";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,7 +34,13 @@ const router = createBrowserRouter([
       {
         path: "checking",
         element: <CheckingRoot />,
-        children: [{ index: true, element: <CheckingSpelling /> }],
+        id: "checking",
+        loader: checkPremiumAccount,
+        children: [
+          { index: true, element: <CheckingSpelling /> },
+          { path: "grammar",loader:redirectNotPremium, element: <CheckingGrammar /> },
+          { path: "history", element: <CheckingSpelling /> },
+        ],
       },
       {
         path: "blog",
@@ -78,6 +84,7 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {path:"personal",element:<PersonalPage />},
       { path: "premium", element: <HomePage /> },
       { path: "auth", element: <Authentication />, action: authAction },
       { path: "admin", element: <AdminPage /> },
@@ -89,7 +96,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <CheckingContextProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </CheckingContextProvider>
   );
 }

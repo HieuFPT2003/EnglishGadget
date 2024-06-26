@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
-import { redirect, Link } from "react-router-dom";
-import { tokenLoader } from "../../../util/auth.js";
+import { redirect, Link,useLoaderData } from "react-router-dom";
+import { tokenLoader,checkPremiumAccount } from "../../../util/auth.js";
 import classes from "./CheckingNavigation.module.css";
 
-function Logout() {
-  localStorage.removeItem("token");
-  localStorage.removeItem("expiration");
-  return redirect("/");
-}
 
 function CheckingNavigation() {
   const [currentUser, setCurrentUser] = useState([]);
+  const premium = useLoaderData();
 
   const fetchUser = async (token) => {
     const response = await fetch(
@@ -40,23 +36,16 @@ function CheckingNavigation() {
   return (
     <nav className={classes.nav}>
       <div className={classes.titlePage}>Checking</div>
-
+      {!premium &&  <Link to="/premium" className={classes.premiumBtn}>Premium to copy</Link>}
       {tokenLoader() !== null && (
         <>
           <div className={classes.navList}>
             <ul className={classes.listBtn}>
               <li>
-                <Link to="history">Grammar Checking</Link>
-              </li>
-
-              <li>
-                <Link to="history">{`/ History `}</Link>
+                <Link to="grammar">Grammar Checking</Link>
               </li>
               <li>
-                <Link to="#">{`/ ${currentUser.name} /`}</Link>
-              </li>
-              <li>
-                <Link onClick={Logout}>Logout</Link>
+                <Link to="/personal">{`/ ${currentUser.name}`}</Link>
               </li>
             </ul>
           </div>

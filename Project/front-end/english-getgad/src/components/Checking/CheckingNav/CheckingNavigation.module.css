@@ -17,3 +17,12 @@
     gap: 0.5rem;
     font-weight: 700;
 }
+.premiumBtn{
+    background-color: var(--color-secondary-400);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}

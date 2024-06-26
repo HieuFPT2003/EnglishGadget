@@ -37,6 +37,16 @@
     --color-primary-700: #fbc14d;
     --color-primary-800: #fab833;
     --color-primary-900: #f6ad1b;
+
+    --color-secondary-400: #a3e635;
+    --color-secondary-400: #84cc16;
+    --color-secondary-500:#65a30d;
+    --color-secondary-600: #4d7a0a;
+
+
+    --color-third-400: #a21caf;
+    --color-third-500: #8a0f9e;
+    --color-third-600: #6e0d7a;
 }
 
 body {
