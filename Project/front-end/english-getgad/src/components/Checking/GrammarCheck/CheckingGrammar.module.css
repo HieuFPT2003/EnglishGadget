@@ -47,35 +47,35 @@
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  gap:1.6rem;
+  gap: 1.6rem;
 }
-.buttonSuggest{
+.buttonSuggest {
   padding: 0.4rem 1.2rem;
   background-color: rgb(101 163 13);
   margin-left: 1rem;
   border-radius: 1rem;
-  color:white;
+  color: white;
 }
-.errorWord{
-  color:red;
+.errorWord {
+  color: red;
 }
-.message{
+.message {
   font-size: 1.2rem;
-  margin-bottom:1.4rem ;
+  margin-bottom: 1.4rem;
 }
-.titleSuggest{
+.titleSuggest {
   font-weight: 700;
-  color:chartreuse;
+  color: chartreuse;
 }
-.dialog{
+.dialog {
   display: flex;
   flex-direction: column;
   gap: 1rem;
- 
-  padding:1rem;
+
+  padding: 1rem;
   background-color: rgb(3 7 18);
 }
-.titleDialog{
+.titleDialog {
   font-size: 2rem;
   font-weight: 700;
   color: rgb(245 158 11);
@@ -83,25 +83,25 @@
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
-.contentDialog{
+.contentDialog {
   font-size: 1.4rem;
   color: white;
 }
-.footerDialog{
+.footerDialog {
   display: flex;
   flex-direction: row;
-  justify-content:end;
-  gap:1rem;
+  justify-content: end;
+  gap: 1rem;
   margin-top: 4rem;
 }
-.btnClose{
+.btnClose {
   padding: 1rem;
-  border:1px solid rgb(245 158 11);
+  border: 1px solid rgb(245 158 11);
   color: rgb(245 158 11);
   font-weight: 700;
   border-radius: 1rem;
 }
-.btnPremium{
+.btnPremium {
   padding: 1rem;
   background-color: rgb(245 158 11);
   color: white;
@@ -117,13 +117,12 @@
 #styleScroll::-webkit-scrollbar {
   width: 10px;
   background-color: transparent;
-
 }
 
 #styleScroll::-webkit-scrollbar-thumb {
   background-color: #f90;
   border-radius: 8px;
-  
+
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 25%,
@@ -134,4 +133,45 @@
     transparent 75%,
     transparent
   );
+}
+.historyTitle{
+  font-size: 1.5rem;
+  height: 3.6rem;
+  padding: 1rem;
+  font-weight: 700;
+  background-color: var(--color-third-500);
+  text-align: center;
+}
+
+.historyBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(3 7 18);
+  margin: 1rem 10rem;
+}
+.historyList{
+  display: flex;
+  flex-direction: column;
+  gap:1.2rem
+}
+.historyItem{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(245 158 11);
+  border-radius: 1rem;
+}
+.historyTime{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-gray-500);
+
+}
+.historyText{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(3 7 18);
 }
