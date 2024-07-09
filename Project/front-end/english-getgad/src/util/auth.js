@@ -42,19 +42,17 @@ export async function checkPremiumAccount() {
     return false;
   }
   const premium = await fetchUser(token);
-
-  async function fetchUser(token) {
-    const response = await fetch(`http://localhost:9999/Users?token=${token}`);
-    if (!response.ok) {
-      console.log(response.status);
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const users = await response.json();
-    return users[0].premium;
-  }
-
-  console.log("premium", premium);
   return premium;
+}
+
+async function fetchUser(token) {
+  const response = await fetch(`http://localhost:9999/Users?token=${token}`);
+  if (!response.ok) {
+    console.log(response.status);
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  const users = await response.json();
+  return users[0].premium;
 }
 
 export async function redirectNotPremium() {
@@ -65,3 +63,28 @@ export async function redirectNotPremium() {
   }
   return null;
 }
+
+export async function fetchUserRole(token) {
+  const response = await fetch(`http://localhost:9999/Users?token=${token}`);
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  const users = await response.json();
+  return users[0].role;
+}
+
+
+// Check if the user is an admin
+export async function checkAdminRoleLoader() {
+  const token = getAuthToken();
+  if (!token) {
+    return redirect("/auth");
+  }
+
+  const role = await fetchUserRole(token);
+  if (role !== 'admin') {
+    return redirect("/auth");
+  }
+  return null;
+}
+

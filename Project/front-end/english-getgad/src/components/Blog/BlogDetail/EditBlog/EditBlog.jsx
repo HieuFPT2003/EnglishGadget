@@ -15,8 +15,8 @@ function EditBlog() {
     likeCount: post.likeCount,
     title: post.title,
     imagePost: post.imagePost,
-    postText: post.postText,
-    category: post.categoryID * 1,
+    content: post.content,
+    category: post.category * 1,
     datePosted: getCurrentDateTime(),
   });
 
@@ -85,7 +85,7 @@ function EditBlog() {
             name="content"
             type="text"
             placeholder="Enter Content of the post"
-            value={form.postText}
+            value={form.content}
             onChange={handleChange}
             required
             rows={10}

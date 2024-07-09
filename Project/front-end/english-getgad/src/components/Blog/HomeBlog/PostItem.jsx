@@ -13,7 +13,7 @@ function PostItem({ post }) {
                 alt='img'
                 className={classes.img}
             />
-            <p className={classes.content}>{post.postText}</p>
+            <p className={classes.content}>{post.content}</p>
         </Link>
     );
 }

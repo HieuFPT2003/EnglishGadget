@@ -146,7 +146,7 @@ export function CheckingContextProvider({ children }) {
     if(!text) return
     const history = {
       text,
-      userID : currentUser.userID,
+      userID : currentUser.id,
       type,
       date: new Date().toISOString()
     }
@@ -218,7 +218,7 @@ export function CheckingContextProvider({ children }) {
 
     try {
       const response = await axios.get(
-        `http://localhost:9999/History?userID=${currentUser.userID}`
+        `http://localhost:9999/History?userID=${currentUser.id}`
       );
       const data = response.data; 
       console.log(data)
@@ -230,6 +230,12 @@ export function CheckingContextProvider({ children }) {
       console.log("Done")
     }
   };
+
+  const changePersonal = async (newUsers)=>{
+    await axios.put(
+      `http://localhost:9999/Users/${newUsers.id}`
+    )
+  }
 
   const value = {
     text,
@@ -251,6 +257,7 @@ export function CheckingContextProvider({ children }) {
     handleCheckSpelling,
     handleShowHistory,
     history,
+    changePersonal
   };
   
   return (

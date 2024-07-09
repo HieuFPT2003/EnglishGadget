@@ -6,12 +6,12 @@ import {
   Link,
 } from "react-router-dom";
 import { tokenLoader } from "../../../util/auth";
+import axios from "axios";
 
 function BlogDetail() {
   const { post } = useRouteLoaderData("page-detail");
   const [dataPost, setDataPost] = useState(null);
   const [currentUser, setCurrentUser] = useState(null);
-  const submit = useSubmit();
 
   useEffect(() => {
     setDataPost(post);
@@ -35,7 +35,9 @@ function BlogDetail() {
       "Are you sure you want to delete this post?"
     );
     if (proceed) {
-      submit(null, { method: "DELETE" });
+      console.log("Delete post");
+      await axios.delete(`http://localhost:9999/UserPost/${dataPost.id}`);
+      window.location.href = "/blog/home";  
     }
   };
 
@@ -56,10 +58,10 @@ function BlogDetail() {
         />
       </div>
       <div className="mt-24 text-xl">
-        <p>{dataPost.postText}</p>
+        <p>{dataPost.content}</p>
       </div>
 
-      {currentUser && currentUser.userID === dataPost.userID && (
+      {currentUser && currentUser.id === dataPost.userID && (
         <div className="flex justify-around mt-24">
           <button className="min-w-32 py-4 bg-yellow-500">
             <Link to={`/blog/${dataPost.id}/edit`}>Edit Post</Link>
@@ -108,12 +110,12 @@ async function loadPosts() {
 
 export async function action({ params, request }) {
   const id = params.id;
-  const response = await fetch(`http://localhost:9999/UserPost/${id}`, {
-    method: request.method,
-  });
+  console.log("Delete post id:", id);
+  const response = await axios.delete(`http://localhost:9999/UserPost/${id}`)
 
   if (!response.ok) {
-    throw new Error("Failed to delete post");
+    console.log(response.statusText);
+    throw new Error(response.statusText);
   }
 
   return redirect("/blog/home");

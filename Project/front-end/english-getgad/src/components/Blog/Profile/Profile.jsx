@@ -22,9 +22,8 @@ function Profile() {
 
     fetchData();
   }, []);
-
-
-  console.log(currentUser);
+  
+  console.log(currentUser); 
   return (
     <div className="col-span-3">
       <div>
@@ -62,7 +61,7 @@ function Profile() {
             </Link>
           </div>
         </div>
-        <PostList userID={currentUser.userID} />
+        <PostList userID={currentUser.id} />
       </div>
     </div>
   );

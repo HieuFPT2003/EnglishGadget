@@ -7,7 +7,6 @@ import axios from "axios";
 function AddPostForm() {
   const navigation = useNavigation();
   const [currentUser, setCurrentUser] = useState([]);
-  const [postID, setPostID] = useState();
   const isSubmitting = navigation.state === "submitting";
 
   // Fetch user
@@ -27,19 +26,8 @@ function AddPostForm() {
   }, []);
 
 
-  // Fetch postID
-  useEffect(() => {
-    axios
-      .get("http://localhost:9999/UserPost")
-      .then((response) => {
-        setPostID(response.data.length + 1);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
-
   const [form, setForm] = useState({
+    id:currentUser.id,
     title: "",
     image: "",
     content: "",
@@ -54,19 +42,16 @@ function AddPostForm() {
     });
   };
 
+  console.log("Post ID:", currentUser.id);
+
   return (
     <Form method="post" className={classes.form}>
       <p>
         <input
           name="userID"
           type="hidden"
-          value={currentUser.userID}
-          readOnly
+          value={currentUser.id}
         />
-      </p>
-
-      <p>
-        <input name="id" type="hidden" value={postID} readOnly />
       </p>
 
       <p>

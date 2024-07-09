@@ -1,48 +1,33 @@
 {
   "Users": [
     {
-      "userID": 1,
-      "email": "user1@example.com",
-      "phone": "123456789",
+      "password": "admin",
+      "role": "admin",
+      "id": "lk89",
+      "name": "Nguyen Quang Hieu",
       "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
-      "address": "Address 1",
-      "age": 25,
-      "name": "Nguyen Van A",
-      "password": "hashed_password1",
-      "role": 0,
-      "premium": false,
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ91"
+      "email": "admin@admin",
+      "phone": "0867824950",
+      "age": 20,
+      "address": "Ha Noi",
+      "premium": true,
+      "token": "admin"
     },
     {
-      "id": "2003",
-      "userID": 2,
-      "email": "test@test.com",
-      "phone": "987654321",
-      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
-      "address": "Nguyen Van B",
-      "age": 30,
-      "name": "Test Name",
+      "id": "pk90",
       "password": "123",
-      "role": 0,
-      "premium": false,
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ92"
-    },
-    {
-      "id": "1234",
-      "userID": 10,
+      "role": "user",
+      "name": "Hieu ",
+      "avatar": "data:image/png;base64,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",
       "email": "premium@premium.com",
       "phone": "987654321",
-      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
+      "age": "20",
       "address": "Nguyen Van B",
-      "age": 30,
-      "name": "Premium Name",
-      "password": "123",
-      "role": 0,
       "premium": true,
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ120"
     },
     {
-      "userID": 3,
+      "id": "gh12",
       "email": "user3@example.com",
       "phone": "111222333",
       "address": "Nguyen Van C",
@@ -50,25 +35,13 @@
       "name": "Account 3",
       "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
       "password": "hashed_password3",
-      "role": 0,
+      "role": "user",
       "premium": false,
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ93"
     },
     {
-      "userID": 4,
-      "email": "user4@example.com",
-      "phone": "444555666",
-      "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
-      "address": "Nguyen Quang A",
-      "age": 40,
-      "accountName": "Account 4",
-      "password": "hashed_password4",
-      "role": 0,
-      "premium": false,
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ94"
-    },
-    {
-      "userID": 5,
+      "id": "7bd1",
+      "name": "Nguyen Quang B",
       "email": "user5@example.com",
       "phone": "777888999",
       "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
@@ -76,23 +49,22 @@
       "age": 45,
       "accountName": "Account 5",
       "password": "hashed_password5",
-      "role": 0,
+      "role": "user",
       "premium": false,
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ95"
     },
     {
-      "userID": 6,
-      "id": "3114",
+      "id": "6as2",
       "avatar": "https://pbs.twimg.com/media/F_r42tKasAEr2QE.jpg",
-      "email": "hieu2003@gmail.com",
-      "password": "Hieu",
+      "name": "Nguyen Quang Hieu",
+      "email": "test@test",
+      "password": "test",
       "phone": "200320",
       "address": "HungYen",
-      "name": "Quang Hieu",
       "age": "7",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ96",
-      "premium": true,
-      "role": "admin"
+      "role": "user",
+      "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCh687",
+      "premium": true
     },
     {
       "id": "b24a",
@@ -104,102 +76,151 @@
       "address": "Hung Yen",
       "name": "Nguyen Quang Hieu",
       "age": "20",
-      "role": 1,
-      "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ97"
+      "role": "user",
+      "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ97",
+      "premium": false
+    },
+    {
+      "password": "123",
+      "role": "user",
+      "id": "b5C4yna",
+      "name": "Hieu",
+      "avatar": "https://imagev3.vietnamplus.vn/w1000/Uploaded/2024/mzdic/2023_03_24/Cristiano_Ronaldo_Portugal_2403.jpg.webp",
+      "email": "hieu@gmail.com",
+      "phone": "0987654",
+      "age": "36",
+      "address": "HN",
+      "premium": false,
+      "token": "24R1N0Bfm8bHG2qMzVC8iBF2S3wt9iIw"
     }
   ],
   "UserPost": [
     {
-      "id": 1,
-      "userID": 1,
+      "id": "123h",
+      "userID": "pk90",
       "title": "Portugal Euro 2024 squad: Who Roberto Martinez will take to Germany",
       "imagePost": "https://media.bongda.com.vn/files/duc.nguyen/2024/01/01/screenshot-2023-12-31-224310-0816.png",
-      "postText": "The Selecao have a decent chance of tasting continental glory this summer if they play to their full potential.Although England and France must be seen as favourites, it wouldn't be a reach to place Portugal in the next crop of teams most likely to lift the Euro 2024 trophy in Germany this summer.After an underwhelming showing three years ago, where they were dumped out of the competition in the last 16 at the hands of Belgium, as well as a shock World Cup quarter-final exit to Morocco in Qatar, the Selecao will be motivated to put in a better showing this time around.Fernando Santos left his post following that defeat to the north African side, with Roberto Martinez stepping into the hotseat in his stead. The former Belgium boss was not a universally-popular choice, but he's done an impressive job thus far, as his side won each of his opening 10 games in charge.Martinez is blessed with a group bulging with talent, and they should be extra motivated to perform for Cristiano Ronaldo, in what is likely to be his last-ever international tournament. But who made Portugal's 26-player Euro squad? GOAL takes a look...Portugal's defensive options are strong, too. Ruben Dias and Joao Cancelo are nailed-on starters at the back, while Manchester United star Diogo Dalot has proved a popular choice down the left-hand side of defence.The question of who will partner Dias at centre-back is more open. Martinez has flipped between a back four and back three since taking over, with youngsters Goncalo Inacio and Antonio Silva both receiving minutes. though the ageless Pepe remains an option, too.",
+      "content": "The Selecao have a decent chance of tasting continental glory this summer if they play to their full potential.Although England and France must be seen as favourites, it wouldn't be a reach to place Portugal in the next crop of teams most likely to lift the Euro 2024 trophy in Germany this summer.After an underwhelming showing three years ago, where they were dumped out of the competition in the last 16 at the hands of Belgium, as well as a shock World Cup quarter-final exit to Morocco in Qatar, the Selecao will be motivated to put in a better showing this time around.Fernando Santos left his post following that defeat to the north African side, with Roberto Martinez stepping into the hotseat in his stead. The former Belgium boss was not a universally-popular choice, but he's done an impressive job thus far, as his side won each of his opening 10 games in charge.Martinez is blessed with a group bulging with talent, and they should be extra motivated to perform for Cristiano Ronaldo, in what is likely to be his last-ever international tournament. But who made Portugal's 26-player Euro squad? GOAL takes a look...Portugal's defensive options are strong, too. Ruben Dias and Joao Cancelo are nailed-on starters at the back, while Manchester United star Diogo Dalot has proved a popular choice down the left-hand side of defence.The question of who will partner Dias at centre-back is more open. Martinez has flipped between a back four and back three since taking over, with youngsters Goncalo Inacio and Antonio Silva both receiving minutes. though the ageless Pepe remains an option, too.",
       "datePosted": "2023-11-01T10:00:00Z",
       "likeCount": 700,
-      "categoryID": 2
+      "category": 2
     },
     {
-      "userID": 2,
-      "likeCount": 4,
+      "id": "09",
       "title": "Blockchain, originally developed as the underlying technology for Bitcoin",
+      "userID": "pk90",
       "imagePost": "https://media.licdn.com/dms/image/D4E12AQFvbkkfGRnhEg/article-cover_image-shrink_720_1280/0/1710402849694?e=2147483647&v=beta&t=mmhXhwJnZS1SW0m0U_NW1o1yY6SU7l0pJCj-u459yoc",
-      "postText": "Today, we explore the evolution of blockchain technology and its transformative impact on various industries. Blockchain, originally developed as the underlying technology for Bitcoin, has grown into a versatile tool with applications ranging from supply chain management to voting systems. Its decentralized nature, coupled with strong cryptographic security, ensures transparency and trust in transactions. As blockchain continues to mature, new consensus mechanisms and scalability solutions are being developed to address its limitations. The future of blockchain holds promise in disrupting traditional business models and creating new avenues for innovation.",
-      "category": 3,
-      "datePosted": "21/06/2024 22:16:07",
-      "id": 2
+      "content": "Today, we explore the evolution of blockchain technology and its transformative impact on various industries. Blockchain, originally developed as the underlying technology for Bitcoin, has grown into a versatile tool with applications ranging from supply chain management to voting systems. Its decentralized nature, coupled with strong cryptographic security, ensures transparency and trust in transactions. As blockchain continues to mature, new consensus mechanisms and scalability solutions are being developed to address its limitations. The future of blockchain holds promise in disrupting traditional business models and creating new avenues for innovation.",
+      "category": 5,
+      "datePosted": "21/06/2024 22:16:07"
     },
     {
-      "id": 3,
-      "userID": 3,
+      "id": "34",
       "title": "Companies and policymakers are grappling with the need for robust regulations",
+      "userID": "6as2",
       "imagePost": "https://media.licdn.com/dms/image/D5612AQFgdlIYJZd2Bg/article-cover_image-shrink_720_1280/0/1715577815351?e=2147483647&v=beta&t=3H6lOya2q5l16AExbcp-Slr5HycRnTKHdp3yz4zpHus",
-      "postText": "Today, we delve into the ethical implications of artificial intelligence (AI) and its role in shaping our future society. AI, with its ability to analyze vast amounts of data and make autonomous decisions, raises concerns about privacy, bias, and job displacement. As AI algorithms become more sophisticated, ensuring their ethical use becomes paramount. Companies and policymakers are grappling with the need for robust regulations and guidelines to mitigate risks and protect human rights. Despite these challenges, AI offers immense potential to enhance healthcare, transportation, and other critical sectors.",
-      "datePosted": "2023-11-03T10:00:00Z",
-      "likeCount": 100,
-      "categoryID": 4
+      "content": "Today, we delve into the ethical implications of artificial intelligence (AI) and its role in shaping our future society. AI, with its ability to analyze vast amounts of data and make autonomous decisions, raises concerns about privacy, bias, and job displacement. As AI algorithms become more sophisticated, ensuring their ethical use becomes paramount. Companies and policymakers are grappling with the need for robust regulations and guidelines to mitigate risks and protect human rights. Despite these challenges, AI offers immense potential to enhance healthcare, transportation, and other critical sectors.",
+      "category": 1,
+      "datePosted": "2023-11-03T10:00:00Z"
     },
     {
-      "id": 4,
-      "userID": 4,
-      "title": "From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe",
-      "imagePost": "https://media.licdn.com/dms/image/D4E12AQE0wWaC8DZ_ZA/article-cover_image-shrink_720_1280/0/1712827735922?e=2147483647&v=beta&t=ExAqWEZ4q5WmxHnzLE870Do5dP-u2vLKUQV7b6dbKPY",
-      "postText": "Today, we explore the growing importance of cybersecurity in an increasingly digital world. With the proliferation of connected devices and online services, cybersecurity threats are becoming more sophisticated and widespread. Organizations must adopt robust cybersecurity measures to protect their data and infrastructure from malicious actors. From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe, affecting businesses, governments, and individuals alike. As we navigate this digital age, cybersecurity awareness and preparedness are critical to safeguarding our digital identities and ensuring a secure online environment.",
-      "datePosted": "2023-11-04T10:00:00Z",
+      "userID": "6as2",
       "likeCount": 500,
-      "categoryID": 5
+      "title": "(Edit) From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe",
+      "imagePost": "https://media.licdn.com/dms/image/D4E12AQE0wWaC8DZ_ZA/article-cover_image-shrink_720_1280/0/1712827735922?e=2147483647&v=beta&t=ExAqWEZ4q5WmxHnzLE870Do5dP-u2vLKUQV7b6dbKPY",
+      "content": "Today, we explore the growing importance of cybersecurity in an increasingly digital world. With the proliferation of connected devices and online services, cybersecurity threats are becoming more sophisticated and widespread. Organizations must adopt robust cybersecurity measures to protect their data and infrastructure from malicious actors. From ransomware attacks to data breaches, the impact of cybersecurity incidents can be severe, affecting businesses, governments, and individuals alike. As we navigate this digital age, cybersecurity awareness and preparedness are critical to safeguarding our digital identities and ensuring a secure online environment.",
+      "category": 5,
+      "datePosted": "08/07/2024 00:33:25",
+      "id": "56"
     },
     {
-      "userID": 2,
-      "likeCount": 4,
-      "title": "Euro",
-      "imagePost": "https://image.nhandan.vn/w800/Uploaded/2024/yqjwcqjlq/2024_06_14/anh-1-euro-3974.jpg.webp",
-      "content": "",
-      "category": 2,
-      "datePosted": "15/06/2024 15:46:07",
-      "id": 5
-    },
-    {
-      "id": 10,
-      "userID": 5,
+      "id": "10",
+      "userID": "6as2",
       "title": "Today, we discuss the future of sustainable energy and the global shift towards renewable sources",
       "imagePost": "https://static.scientificamerican.com/sciam/cache/file/472706E8-7578-4030-B3A528D97F9E736E_source.jpg?w=1200",
-      "postText": "Today, we discuss the future of sustainable energy and the global shift towards renewable sources. As climate change continues to impact our planet, the transition to clean energy sources has become imperative. Solar, wind, and hydroelectric power offer environmentally friendly alternatives to fossil fuels, reducing carbon emissions and mitigating the effects of climate change. Governments and businesses worldwide are investing in renewable energy infrastructure and technologies to achieve carbon neutrality and create a sustainable future for generations to come.",
+      "content": "Today, we discuss the future of sustainable energy and the global shift towards renewable sources. As climate change continues to impact our planet, the transition to clean energy sources has become imperative. Solar, wind, and hydroelectric power offer environmentally friendly alternatives to fossil fuels, reducing carbon emissions and mitigating the effects of climate change. Governments and businesses worldwide are investing in renewable energy infrastructure and technologies to achieve carbon neutrality and create a sustainable future for generations to come.",
       "datePosted": "2023-11-05T10:00:00Z",
       "likeCount": 2,
-      "categoryID": 1
+      "category": 2
     },
     {
-      "userID": 1,
-      "likeCount": 1,
+      "id": "9",
       "title": "AR allows artists to create immersive experiences that blend physical and digital elements",
+      "userID": "6as2",
       "imagePost": "https://capsulesight.com/318-SoraStorytellingAR-feature.webp",
-      "postText": "Today, we explore the intersection of art and technology, examining how digital platforms and augmented reality (AR) are reshaping the art world. AR allows artists to create immersive experiences that blend physical and digital elements, providing new ways for audiences to interact with art. From virtual exhibitions to AR-powered installations, technology is democratizing access to art and challenging traditional notions of creativity. As digital art continues to evolve, artists are embracing new tools and platforms to push the boundaries of artistic expression and engage global audiences.",
-      "category": null,
-      "datePosted": "15/06/2024 15:54:55",
-      "id": 6
+      "content": "Today, we explore the intersection of art and technology, examining how digital platforms and augmented reality (AR) are reshaping the art world. AR allows artists to create immersive experiences that blend physical and digital elements, providing new ways for audiences to interact with art. From virtual exhibitions to AR-powered installations, technology is democratizing access to art and challenging traditional notions of creativity. As digital art continues to evolve, artists are embracing new tools and platforms to push the boundaries of artistic expression and engage global audiences.",
+      "category": 1,
+      "datePosted": "15/06/2024 15:54:55"
+    },
+    {
+      "id": "8",
+      "title": "Uyen Ny Iu",
+      "userID": "6as2",
+      "imagePost": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfa4N-hLZWEeKx43ObkOA_6IDQwgakw2eiXpUC-5gl7ikj5nuzC28qfUa3RnXg87WZZpU&usqp=CAU",
+      "content": "Bạn gái tin đồn của nam game thủ này nhan sắc \"không phải dạng vừa\". Với cộng đồng mạng nói chung, Bray được biết đến là nam rapper điển trai, sở hữu lượng fan đông đảo hàng đầu của làng rap Việt. Còn với fan Liên Quân Mobile, anh chàng này còn được gợi nhớ cùng nickname Bao Chẩn - tên khi anh phát sóng chơi game như một streamer. Anh chàng này đam mê game đến nỗi từng hoãn luôn việc ra nhạc khiến fan chỉ biết \"thở dài\".",
+      "category": 2,
+      "datePosted": "30/06/2024 20:24:25"
+    },
+    {
+      "userID": "2003",
+      "title": "Nguyen Quang Hieu",
+      "imagePost": "https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg",
+      "content": "Giải thưởng Ảnh quốc tế Tokyo (TIFA) đã kết thúc với hàng ngàn bài dự thi, trong đó có loạt bức ảnh được nhận xét không chỉ đẹp mà gây sốc, chân thực và kỳ diệu... Đặc biệt, hạng mục Thiên nhiên nổi bật với những khoảnh khắc quyến rũ của thế giới động vật hoang dã hay khung cảnh hoàng hôn ngoạn mục...  Dưới đây là 20 bức ảnh đẹp nhất về thiên nhiên của giải thưởng TIFA 2023 vừa được công bố",
+      "category": 1,
+      "datePosted": "05/07/2024 01:31:57",
+      "id": "9"
+    },
+    {
+      "userID": "test",
+      "title": "Hieu",
+      "imagePost": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "content": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "category": 5,
+      "datePosted": "08/07/2024 00:14:26",
+      "like": 0,
+      "id": "zAOJXcp"
+    },
+    {
+      "userID": "6as2",
+      "title": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "imagePost": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "content": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "category": 1,
+      "datePosted": "08/07/2024 00:26:00",
+      "like": 0,
+      "id": "PA510kZ"
+    },
+    {
+      "userID": "6as2",
+      "title": "Hieu",
+      "imagePost": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "content": "https://top10tphcm.com/wp-content/uploads/2023/02/gai-dep-nhat-viet-nam-17.jpg",
+      "category": 5,
+      "datePosted": "08/07/2024 00:27:11",
+      "like": 0,
+      "id": "tHbR_hU"
     }
   ],
   "Category": [
     {
-      "categoryID": 1,
-      "categoryName": "Technology"
+      "id": 1,
+      "name": "Technology"
     },
     {
-      "categoryID": 2,
-      "categoryName": "Science"
+      "id": 2,
+      "name": "Science"
     },
     {
-      "categoryID": 3,
-      "categoryName": "Art"
+      "id": 3,
+      "name": "Art"
     },
     {
-      "categoryID": 4,
-      "categoryName": "History"
+      "id": 4,
+      "name": "History"
     },
     {
-      "categoryID": 5,
-      "categoryName": "Sports"
+      "id": 5,
+      "name": "Sports"
     }
   ],
   "Instagram": [
@@ -253,7 +274,7 @@
     },
     {
       "text": "You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use MD:flex-row to apply the flex-row utility at only medium screen sizes and above.",
-      "userID": 10,
+      "userID": "2003",
       "type": "Grammar & Spelling",
       "date": "2024-06-22T21:58:36.573Z",
       "id": 7
@@ -369,6 +390,41 @@
       "type": "Grammar & Spelling",
       "date": "2024-06-25T15:34:55.504Z",
       "id": 27
+    },
+    {
+      "text": "LanguageTool is your intelligent writing assistant for all common browsers and word processors. Write or paste your text here too have it checked continuously. Errors will be underlined in different colors: we will mark seplling errors with red underilnes. Furthermore grammar error's are highlighted in yellow. LanguageTool also marks style issues in a reliable manner by underlining them in blue. did you know that you can sea synonyms by double clicking a word? Its a impressively versatile tool especially if youd like to tell a colleague from over sea's about what happened at 5 PM in the afternoon on Monday, 27 May 2007.",
+      "userID": 2003,
+      "type": "Grammar & Spelling",
+      "date": "2024-07-04T04:28:44.400Z",
+      "id": 28
+    },
+    {
+      "text": "LanguageTool is your intelligent writing assistant for all common browsers and word processors. Write or paste your text here too have it checked continuously. Errors will be underlined in different colors: we will mark spelling errors with red underilnes. Furthermore grammar error's are highlighted in yellow. LanguageTool also marks style issues in a reliable manner by underlining them in blue. did you know that you can sea synonyms by double clicking a word? Its a impressively versatile tool especially if youd like to tell a colleague from over sea's about what happened at 5 PM in the afternoon on Monday, 27 May 2007.",
+      "userID": 2003,
+      "type": "Grammar & Spelling",
+      "date": "2024-07-04T04:28:50.662Z",
+      "id": 29
+    },
+    {
+      "text": "LanguageTool is your intelligent writing assistant for all common browsers and word processors. Write or paste your text here too have it checked continuously. Errors will be underlined in different colours: we will mark seplling errors with red underilnes. Furthermore grammar error's are highlighted in yellow. LanguageTool also marks style issues in a reliable manner by underlining them in blue. did you know that you can sea synonyms by double clicking a word? Its a impressively versatile tool especially if youd like to tell a colleague from over sea's about what happened at 5 PM in the afternoon on Monday, 27 May 2007.",
+      "userID": "6as2",
+      "type": "Grammar & Spelling",
+      "date": "2024-07-07T18:01:14.035Z",
+      "id": 40
+    },
+    {
+      "text": "LanguageTool is your intelligent writing assistant for all common browsers and word processors. Write or paste your text here too have it checked continuously. Errors will be underlined in different colors: we will mark seplling errors with red underilnes. Furthermore grammar error's are highlighted in yellow. LanguageTool also marks style issues in a reliable manner by underlining them in blue. did you know that you can see synonyms by double clicking a word? Its a impressively versatile tool especially if youd like to tell a colleague from over sea's about what happened at 5 PM on Monday, 27 May 2007.",
+      "userID": "6as2",
+      "type": "Grammar & Spelling",
+      "date": "2024-07-07T18:01:25.496Z",
+      "id": 41
+    },
+    {
+      "text": "LanguageTool is your intelligent writing assistant for all common browsers and word processors. Write or paste your text here too have it checked continuously. Errors will be underlined in different colours: we will mark seplling errors with red underilnes. Furthermore grammar error's are highlighted in yellow. LanguageTool also marks style issues in a reliable manner by underlining them in blue. did you know that you can sea synonyms by double clicking a word? Its a impressively versatile tool especially if youd like to tell a colleague from over sea's about what happened at 5 PM in the afternoon on Monday, 27 May 2007.",
+      "userID": "6as2",
+      "type": "Grammar & Spelling",
+      "date": "2024-07-07T18:42:55.631Z",
+      "id": 42
     }
   ]
 }

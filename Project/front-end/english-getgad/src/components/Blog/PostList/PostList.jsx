@@ -37,7 +37,7 @@ function PostList({ userID }) {
                                 <h1 className='font-bold text-2xl'>
                                     {post.title}
                                 </h1>
-                                <p>{post.postText}</p>
+                                <p>{post.content}</p>
                             </div>
                         </div>
                     </Link>

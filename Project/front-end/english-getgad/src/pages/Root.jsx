@@ -2,6 +2,7 @@ import { Outlet, useLoaderData, useSubmit } from 'react-router-dom';
 import MainNavigation from '../components/MainPage/MainNavigation.jsx';
 import { getTokenDuration } from '../util/auth.js';
 import { useEffect } from 'react';
+import Footer from "../components/Footer/Footer.jsx"
 
 function RootLayout() {
     const token = useLoaderData();
@@ -30,9 +31,10 @@ function RootLayout() {
     return (
         <>
             <MainNavigation />
-            <main>
+            <main className='min-h-screen'>
                 <Outlet />
             </main>
+            <Footer />
         </>
     );
 }

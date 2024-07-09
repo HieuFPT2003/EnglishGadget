@@ -1,0 +1,18 @@
+.form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+.form input{
+    min-width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+    color: black;
+}
+.form label{
+    color: var(--color-primary-900);
+}

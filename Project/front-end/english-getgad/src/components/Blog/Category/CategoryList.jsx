@@ -22,11 +22,11 @@ function CategoryList() {
         <div className={classes.categoryList}>
             {categories.map((category) => (
                 <Link
-                    key={category.categoryID}
-                    to={`category/${category.categoryID}`}
+                    key={category.id}
+                    to={`category/${category.category}`}
                     className={classes.categoryLink}
                 >
-                    {category.categoryName}
+                    {category.name}
                 </Link>
             ))}
         </div>
